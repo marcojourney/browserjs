@@ -1,7 +1,7 @@
 {
   "name": "browserjs",
   "description": "Browser browserjs library with the highest accuracy and stability",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": [
     "fraud",
     "fraud detection",
@@ -18,10 +18,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/browserjs.git"
+    "url": "https://github.com/phannamorn/browserjs"
   },
   "bugs": {
-    "url": "https://github.com/browserjs/issues"
+    "url": "https://github.com/phannamorn/browserjs/issues"
   },
   "homepage": "https://github.com/browserjs",
   "main": "dist/index.js",
