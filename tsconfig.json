@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "removeComments": false,
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "noErrorTruncation": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "declaration": true
+  },
+  // It must include everything that Rollup will encounter,
+  // and preferably nothing else in order not to compile excess files
+  "include": [
+    "src/index.ts",
+    "src/**/*.d.ts",
+    "node_modules",
+    "@types"
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es2021"
+    }
+  }
+}
