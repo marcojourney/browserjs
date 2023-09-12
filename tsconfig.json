@@ -2,21 +2,16 @@
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
-    "outDir": "dist",
+    "outDir": "./dist",
     "resolveJsonModule": true,
     "strict": true,
     "declaration": true
   },
   "exclude": [
-    "node_modules",
-    "src/*.test.ts",
-    "src/**/*.test.ts"
+    "node_modules"
   ],
   "include": [
     "src",
-    "src/index.ts",
-    "src/**/*.d.ts",
-    "node_modules",
     "@types"
   ]
 }
