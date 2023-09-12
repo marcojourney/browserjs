@@ -1,0 +1,24 @@
+import { load, Agent, LoadOptions, GetOptions, GetResult, getAttributes, getVisitorId, hashComponents, componentsToDebugString } from './agent';
+import { BuiltinComponents } from './sources';
+import { Confidence } from './confidence';
+import { Component, UnknownComponents } from './utils/entropy_source';
+import { x64hash128 } from './utils/hashing';
+export { load, Agent, LoadOptions, GetOptions, GetResult, getAttributes, getVisitorId, hashComponents, componentsToDebugString, Component, UnknownComponents, BuiltinComponents, Confidence, };
+declare const _default: {
+    load: typeof load;
+    hashComponents: typeof hashComponents;
+    componentsToDebugString: typeof componentsToDebugString;
+};
+export default _default;
+/** Not documented, out of Semantic Versioning, usage is at your own risk */
+export declare const murmurX64Hash128: typeof x64hash128;
+export { prepareForSources } from './agent';
+export { sources } from './sources';
+export { getScreenFrame } from './sources/screen_frame';
+export { getStateFromError as handleApplePayError } from './sources/apple_pay';
+export { getWebGLContext } from './sources/webgl';
+export { getFullscreenElement, isAndroid, isTrident, isEdgeHTML, isChromium, isWebKit, isGecko, isDesktopSafari, } from './utils/browser';
+export { loadSources, Source, SourcesToComponents, transformSource, // Not used here but adds only 222 uncompressed (60 compressed) bytes of code
+UnknownSources, } from './utils/entropy_source';
+export { withIframe } from './utils/dom';
+export { getUTF8Bytes } from './utils/data';

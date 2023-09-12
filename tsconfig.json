@@ -1,15 +1,10 @@
 {
   "compilerOptions": {
+    "target": "es6",
     "module": "commonjs",
-    "target": "es5",
-    "removeComments": false,
+    "outDir": "dist",
     "resolveJsonModule": true,
-    "importHelpers": true,
-    "noErrorTruncation": true,
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
     "declaration": true
   },
   // It must include everything that Rollup will encounter,
@@ -19,11 +14,5 @@
     "src/**/*.d.ts",
     "node_modules",
     "@types"
-  ],
-  "ts-node": {
-    "compilerOptions": {
-      "module": "commonjs",
-      "target": "es2021"
-    }
-  }
+  ]
 }

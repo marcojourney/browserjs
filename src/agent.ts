@@ -1,9 +1,9 @@
-import version from '../package.json'
+import { version } from '../package.json'
 import { requestIdleCallbackIfAvailable } from './utils/async'
 import { SourcesToComponents, UnknownComponents } from './utils/entropy_source'
 import { x64hash128 } from './utils/hashing'
 import { errorToObject } from './utils/misc'
-import loadBuiltinSources, { BuiltinComponents } from './sources'
+import loadBuiltinSources, { BuiltinComponents, sources } from './sources'
 import getConfidence, { Confidence } from './confidence'
 
 /**
@@ -183,14 +183,9 @@ function makeAgent(getComponents: () => Promise<BuiltinComponents>, debug?: bool
  * @param getComponents 
  * @returns 
  */
-function makeAttributes(getComponents: () => Promise<BuiltinComponents>): BuiltinComponents {
-  return {
-    async get(options) {
-      const components = await getComponents();
-
-      return components;
-    },
-  }
+async function makeAttributes(getComponents: () => Promise<BuiltinComponents>): Promise<BuiltinComponents> {
+  const components = await getComponents();
+  return components;
 }
 
 /**
@@ -278,7 +273,7 @@ export async function getAttributes({ delayFallback }: Readonly<LoadOptions> = {
  * @param attributes 
  * @returns 
  */
-export function getVisitorId(attributes: SourcesToComponents): string {
+export function getVisitorId(attributes: SourcesToComponents<typeof sources>): string {
   const result = makeLazyGetResult(attributes)
   return result?.visitorId
 }
