@@ -1,6 +1,6 @@
 {
-  "name": "browserjs",
-  "description": "Browser browserjs library with the highest accuracy and stability",
+  "name": "fingerlockjs",
+  "description": "Browser fingerlockjs library with the highest accuracy and stability",
   "version": "1.0.3",
   "keywords": [
     "fraud",
@@ -9,7 +9,7 @@
     "browser",
     "identification",
     "fingerprint",
-    "browserjs",
+    "fingerlockjs",
     "browser fingerprint",
     "device fingerprint",
     "privacy"

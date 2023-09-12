@@ -1,5 +1,5 @@
 import { BuiltinComponents } from "../src";
 
-declare module "browserjs" {
+declare module "fingerlockjs" {
     export function getAttributes(): Promise<BuiltinComponents>;
 }
