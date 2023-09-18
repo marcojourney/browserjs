@@ -6,6 +6,7 @@ import { x64hash128 } from './utils/hashing';
 export { load, Agent, LoadOptions, GetOptions, GetResult, getAttributes, getVisitorId, hashComponents, componentsToDebugString, Component, UnknownComponents, BuiltinComponents, Confidence, };
 declare const _default: {
     load: typeof load;
+    getAttributes: typeof getAttributes;
     hashComponents: typeof hashComponents;
     componentsToDebugString: typeof componentsToDebugString;
 };

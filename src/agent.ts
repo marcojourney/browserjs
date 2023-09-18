@@ -207,6 +207,10 @@ function monitor() {
   }
 }
 
+export function getHelloWorld() {
+  console.log('Hello World');
+}
+
 /**
  * Builds an instance of Agent and waits a delay required for a proper operation.
  */

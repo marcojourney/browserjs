@@ -78,6 +78,7 @@ export declare function hashComponents(components: UnknownComponents): string;
  * and https://github.com/fingerprintjs/fingerprintjs/commit/945633e7c5f67ae38eb0fea37349712f0e669b18
  */
 export declare function prepareForSources(delayFallback?: number): Promise<void>;
+export declare function getHelloWorld(): void;
 /**
  * Builds an instance of Agent and waits a delay required for a proper operation.
  */

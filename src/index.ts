@@ -1,5 +1,6 @@
 import { 
   load,
+  getHelloWorld,
   Agent, 
   LoadOptions, 
   GetOptions, 
@@ -32,7 +33,7 @@ export {
 }
 // The default export is a syntax sugar (`import * as FP from '...' → import FP from '...'`).
 // It should contain all the public exported values.
-export default { load, hashComponents, componentsToDebugString }
+export default { load, getAttributes, hashComponents, componentsToDebugString }
 
 // The exports below are for private usage. They may change unexpectedly. Use them at your own risk.
 /** Not documented, out of Semantic Versioning, usage is at your own risk */
