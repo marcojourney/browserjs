@@ -1,5 +1,5 @@
-import { SourcesToComponents, UnknownComponents } from './utils/entropy_source';
-import { BuiltinComponents, sources } from './sources';
+import { UnknownComponents } from './utils/entropy_source';
+import { BuiltinComponents } from './sources';
 import { Confidence } from './confidence';
 /**
  * Options for Fingerprint class loading
@@ -78,18 +78,16 @@ export declare function hashComponents(components: UnknownComponents): string;
  * and https://github.com/fingerprintjs/fingerprintjs/commit/945633e7c5f67ae38eb0fea37349712f0e669b18
  */
 export declare function prepareForSources(delayFallback?: number): Promise<void>;
-export declare function getHelloWorld(): void;
 /**
  * Builds an instance of Agent and waits a delay required for a proper operation.
  */
-export declare function load({ delayFallback, debug, monitoring }?: Readonly<LoadOptions>): Promise<Agent>;
+export declare function load({ debug }?: Readonly<LoadOptions>): Promise<Agent>;
 /**
  * Generate browser attributes base on browser behaviors.
  */
 export declare function getAttributes({ delayFallback }?: Readonly<LoadOptions>): Promise<BuiltinComponents>;
 /**
  *
- * @param attributes
  * @returns
  */
-export declare function getVisitorId(attributes: SourcesToComponents<typeof sources>): string;
+export declare function getVisitorId(): Promise<string>;

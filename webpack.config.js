@@ -9,9 +9,9 @@ module.exports = {
             export: 'default'
         }
     },
-    optimization: {
-        minimizer: []
-    },
+    // optimization: {
+    //     minimizer: []
+    // },
     module: {
         rules: [
             {
