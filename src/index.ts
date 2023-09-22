@@ -1,5 +1,6 @@
 import {
   getVisitorId,
   getAttributes
-} from './agent'
+} from './agent';
+
 export default { getAttributes, getVisitorId }

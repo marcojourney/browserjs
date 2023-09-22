@@ -1,5 +1,5 @@
 {
-  "name": "fingerlockjs",
+  "name": "@fingerlockjs/fingerlockjs",
   "description": "Browser fingerlockjs library with the highest accuracy and stability",
   "version": "1.0.5",
   "keywords": [

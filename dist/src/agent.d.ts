@@ -22,6 +22,7 @@ export interface LoadOptions {
      */
     monitoring?: boolean;
 }
+export declare function getHelloWorld(): string;
 /**
  * Options for getting visitor identifier
  */

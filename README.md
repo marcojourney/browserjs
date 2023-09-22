@@ -21,7 +21,7 @@ To use the `getAttributes` function in your project, follow these steps:
         console.error(error);
     });
     ```
-2. Response Payload:
+Response Payload:
 
 <ol>
   <li>The <code>getAttributes</code> function returns a Promise that resolves to a BuiltinComponents object.</li>

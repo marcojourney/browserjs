@@ -1,7 +1,5 @@
-const path = require('path');
-
 module.exports = {
-    entry: './src/index.ts', // Replace with the entry point of your TypeScript file
+    entry: './src/index.ts',
     output: {
         library: {
             name: 'browserjs',
@@ -9,19 +7,19 @@ module.exports = {
             export: 'default'
         }
     },
-    // optimization: {
-    //     minimizer: []
-    // },
+    optimization: {
+        minimizer: []
+    },
     module: {
         rules: [
             {
-                test: /\.ts$/, // Process TypeScript files
-                use: 'ts-loader', // Use ts-loader to transpile TypeScript to JavaScript
-                exclude: /node_modules/, // Exclude node_modules directory
+                test: /\.ts$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
             },
         ],
     },
     resolve: {
-        extensions: ['.ts', '.js'], // Resolve .ts and .js extensions
+        extensions: ['.ts', '.js']
     },
 };

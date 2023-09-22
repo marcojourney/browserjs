@@ -28,6 +28,10 @@ export interface LoadOptions {
   monitoring?: boolean
 }
 
+export function getHelloWorld() {
+  return "Hello World";
+}
+
 /**
  * Options for getting visitor identifier
  */
