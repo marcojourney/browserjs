@@ -1,7 +1,7 @@
 {
   "name": "@fingerlockjs/fingerlockjs",
   "description": "Browser fingerlockjs library with the highest accuracy and stability",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "keywords": [
     "fraud",
     "fraud detection",

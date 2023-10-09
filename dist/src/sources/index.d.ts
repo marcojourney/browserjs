@@ -36,6 +36,7 @@ import getArchitecture from './architecture';
 import getApplePayState from './apple_pay';
 import getPrivateClickMeasurement from './private_click_measurement';
 import { getWebGlBasics, getWebGlExtensions } from './webgl';
+import { getIPAddress, getGeographic } from './ip';
 /**
  * The list of entropy sources used to make visitor identifiers.
  *
@@ -84,6 +85,8 @@ export declare const sources: {
     privateClickMeasurement: typeof getPrivateClickMeasurement;
     webGlBasics: typeof getWebGlBasics;
     webGlExtensions: typeof getWebGlExtensions;
+    ip: typeof getIPAddress;
+    geographic: typeof getGeographic;
 };
 /**
  * List of components from the built-in entropy sources.

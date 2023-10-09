@@ -36,6 +36,7 @@ import getArchitecture from './architecture'
 import getApplePayState from './apple_pay'
 import getPrivateClickMeasurement from './private_click_measurement'
 import { getWebGlBasics, getWebGlExtensions } from './webgl'
+import { getIPAddress, getGeographic } from './ip'
 
 /**
  * The list of entropy sources used to make visitor identifiers.
@@ -95,6 +96,8 @@ export const sources = {
   // after other sources.
   webGlBasics: getWebGlBasics,
   webGlExtensions: getWebGlExtensions,
+  ip: getIPAddress,
+  geographic: getGeographic
 }
 
 /**
